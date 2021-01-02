@@ -1,0 +1,790 @@
+.title {
+    color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url("../img/BG.png");
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: black;
+    height: 3200px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div * {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.wrapper {
+    width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header {
+    height: 820px;
+}
+
+.block1 {
+    height: 300px;
+}
+
+.block2,
+.block3,
+.block4 {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.filler {
+    height: 60px;
+    width: 100%;
+    clear: both;
+}
+
+.b1Slider {
+    float: left;
+    height: 100%;
+    width: 598px;
+    position: relative;
+}
+
+.newsContainer {
+    float: left;
+    height: 258px;
+    width: 527px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../img/newsBgs/img1.png");
+    padding: 20px 35px;
+    border: 1px solid rgb(92, 0, 0);
+}
+
+.sliderIMG {
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#characterNumTitle {
+    float: left;
+    width: 800px;
+}
+
+#sideBoxTitle {
+    float: left;
+    width: 400px;
+}
+
+#characterNumTitle > h1,
+#sideBoxTitle > h1,
+#characterPicTitle > h1 {
+    float: left;
+    margin: 10px 15px;
+    font-size: 20px;
+}
+
+#characterPicTitle > h1:nth-child(2) {
+    float: right;
+}
+
+.charactersNumBox {
+    float: left;
+    width: 796px;
+    height: 358px;
+    /*background-image: url("../img/numBgs/divBg.png");*/
+    border: 1px solid rgb(66, 13, 10);
+    border-right: none;
+}
+
+.sideBox {
+    float: left;
+    width: 398px;
+    height: 358px;
+    position: relative;
+    background-image: url("../img/SideBox/img1.png");
+    border: 1px solid rgb(66, 13, 10);
+    border-left: none;
+}
+
+
+.characterPicsBox {
+    float: left;
+    width: 100%;
+    height: 280px;
+    background-image: url("../img/CharRelPics/Bg.png");
+    border: 1px solid rgb(66, 13, 10);
+}
+
+.leftBlock {
+    float: left;
+    height: 690px;
+    width: 290px;
+    /* background-color:rgba(24, 11, 13, 1); */
+}
+
+.middleBlock {
+    float: left;
+    height: 690px;
+    width: 620px;
+    /*background-color: rgb(78, 35, 42);*/
+}
+
+.rightBlock {
+    float: left;
+    height: 690px;
+    width: 290px;
+}
+
+
+.blockImg {
+    float: left;
+    height: 190px;
+    width: 260px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgb(92, 0, 0);
+    cursor: pointer;
+}
+
+.blockImg > p {
+    width: 100%;
+    float: left;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 3px 0 3px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+}
+
+.sideBox > ul {
+    padding-top: 10px;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-bottom: 1px solid rgb(66, 13, 10);
+    height: 41px;
+    width: 360;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+
+.newNav {
+    height: 50px;
+}
+.newNav > ul {
+    text-align: center;
+    font-size: 15px;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+.sideBox > ul > li,
+.newNav > ul > li,
+.moreInfoNav > ul > li {
+    float: left;
+    width: auto;
+    color: white;
+    top: 0;
+    padding: 2px 0 9px 20px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+.sideBox > ul > li:hover,
+.sideBox > ul > li.active,
+.newNav > ul > li:hover,
+.newNav > ul > li.active,
+.moreInfoNav > ul > li:hover,
+.moreInfoNav > ul > li.active,
+.rankingNav > ul > li:hover,
+.rankingNav > ul > li.active  {
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 3, 3), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    cursor: pointer;
+    border-bottom: 2px red solid;
+}
+.sideBox > ul > li > p,
+.newNav > ul > li > p ,
+.moreInfoNav > ul > li > p {
+    padding-right: 21px;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+.sideBox > ul > li:nth-child(3) > p {
+    padding-right: 20px;
+    border-right: none;
+}
+
+.newNav > ul > li:nth-child(4) > p,
+.moreInfoNav > ul > li:nth-child(4) > p, 
+.moreInfoNav > ul > li:nth-child(3) > p{
+    padding-right: 20px;
+    border-right: none;
+}
+
+
+.moreInfoNav > ul > li:nth-child(4) {
+    margin-left: 50px;
+}
+
+
+.nav .fas {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sliderLines {
+    position: absolute;
+    bottom: -4px;
+    left: 180px;
+}
+
+.para {
+    margin: 0 2px;
+    /*background-color: rgb(151, 0, 0);*/
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /*width: 137px;*/
+    width: 40px;
+    height: 2px;
+}
+
+.pactive {
+    margin: 0 2px;
+    background-color: rgb(255, 0, 0);
+    box-shadow: rgb(255, 0, 0) 0 0 5px, rgb(255, 0, 0) 0 0 10px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /*width: 160px;*/
+    width: 40px;
+    height: 2px;
+}
+
+.nav {
+    float: left;
+    height: auto;
+    /*border: 2px solid #3c0d0a;*/
+    border-top: none;
+    position: relative;
+}
+.nav > ul {
+    width: 150px;
+    margin-top: 10px;
+    text-align: center;
+}
+.nav  ul  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 27px;
+}
+
+
+.nav > ul > li:hover,
+.nav > ul > li.active {
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(255, 3, 3), 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    cursor: pointer;
+}
+
+#logo {
+    float: left;
+    width: 238px;
+    cursor: pointer;;
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+    margin-right: 5px;
+    font-size: 20px;
+    float: left;
+}
+
+.txtBox {
+    width: 500px;
+    height: 25px;
+    margin-bottom: 19px;
+}
+
+
+.txtBox > p {
+    float: left;
+    margin-left: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.txtBox >:nth-child(3) {
+    float: right;
+}
+
+.txtBox > .normal {
+    float: left;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.txtBox > .normalDate {
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(3,1,0,0.4) 19%, rgba(2,1,0,0.4) 79%, rgba(0,0,0,0) 100%);
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    font-size: 15px;
+}
+
+.hot i,
+.hot p,
+.hot > .normal ,
+.hot > .normalDate {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px red, 0 0 15px red;
+}
+
+.hot p:nth-child(3) {
+    font-size: 20px;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(3,1,0,0.4) 5%, rgba(2,1,0,0.4) 79%, rgba(0,0,0,0) 100%);
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px red, 0 0 15px red;
+}
+
+
+.txtCont {
+    height: 210px;
+    overflow-y: scroll;
+    padding: 10px 0 0 10px;
+}
+
+
+
+/* scrollbar things */
+/* width */
+::-webkit-scrollbar,
+::-webkit-scrollbar:horizontal {
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.7);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(209, 0, 0);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 0);
+}
+
+.charBox {
+    float: left;
+    width: 265px;
+    height: 179px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid rgb(66, 13, 10);
+    overflow: hidden;
+    z-index: 0;
+}
+
+.charBox:nth-child(4),
+.charBox:nth-child(5),
+.charBox:nth-child(6){
+    border-bottom: 0;
+}
+
+.rightVertic {
+    padding-top: 15px;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgb(66, 13, 10);
+}
+
+.rightVertic i {
+    margin-left: 10px;
+    margin-bottom: 13px;
+    font-size: 15px;
+}
+
+.rightVertic p {
+    position: absolute;;
+    bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    cursor: default;
+}
+
+.leftVertic {
+    position: absolute;
+    height: 100%;
+    width: 85%;
+    left: 0;
+    top: 0;
+}
+
+
+.paraButton {
+    position: absolute;;
+    bottom: 15px;
+    left: 25px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    width: auto;
+    border: red 1px solid;
+    transform: skew(-15deg);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.paraButton:hover {
+    background-color: rgba(138, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.paraButton  p{
+    margin: -2px 5px 0px 5px;
+}
+
+.leftVertic > p:nth-child(1){
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    font-size: 25px;
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px red, 0 0 15px red;
+    cursor: default;
+}
+
+.leftVertic > p:nth-child(2) {
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    font-size: 13px;
+    text-shadow: none;
+    cursor: default;
+}
+
+.charPicContainer {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 100%;
+}
+
+.charPicContainer img {
+    height: 140px;
+    width: 120px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    border: 1px solid red;
+}
+.charPicContainer > p:nth-child(2) {
+    position: absolute;
+    left: 40px;
+    bottom: 45px;
+    text-align: center;
+    width: 120px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(3,1,0,0.5) 19%, rgba(2,1,0,0.5) 79%, rgba(0,0,0,0) 100%);
+    cursor: default;
+}
+
+.charPicContainer > p:nth-child(3) {
+    position: absolute;
+    left: 40px;
+    bottom: 22px;
+    text-align: center;
+    width: 120px;
+    font-size: 14px;
+    padding-bottom: 3px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(3,1,0,0.5) 19%, rgba(2,1,0,0.5) 79%, rgba(0,0,0,0) 100%);
+    cursor: default;
+}
+
+.videos{
+    height: 400px;
+    width: 620px;
+}
+
+.moreInfo {
+    height: 288px;
+    width: 618px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(92, 0, 0);
+    background-image: url("../img/moreInfoPics/img1.png");
+}
+
+.infotxtCont {
+    width: 560px;
+    height: 210px;
+    overflow-y: scroll;
+    padding: 10px 0 0 10px;
+    margin-left: 25px;
+}
+
+.moreInfoNav {
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 40px;
+}
+
+
+.ranking {
+    height: 290px;
+    width: 260px;
+    margin-left: 45px;
+    margin-top: 440px;
+}
+
+.rankingNav {
+    margin-top: 10px;
+    margin-left: 40px;
+    height: 35px;
+}
+
+.rankingNav li {
+    border: 1px solid rgba(138, 0, 0, 0.6);
+    margin-right: -1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+
+.rankingNav li p {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.rankTitle {
+    height: 25px;
+    width: 260px;
+    clear: both;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+.rankTitle p:nth-child(1){
+    margin-left: 40px;
+    float: left;
+    cursor: default;
+}
+
+.rankTitle p:nth-child(2) {
+    margin-right: 43px;
+    float: right;
+    cursor: pointer;
+}
+
+.rankTitle img {
+    position: absolute;
+    left: -50px;
+    margin-top: -25px;
+    width: 300px;
+    z-index: -1;
+}
+
+
+.rankTitle p:nth-child(2):hover {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px red, 0 0 15px red;
+}
+
+.IvIrankTxtCont,
+.IIIvIIIrankTxtCont,
+.VIvVIrankTxtCont {
+    width: 177px;
+    height: 125px;
+    padding: 3px 0 0 0px;
+    margin-left: 40px;
+    margin-top: -2px;
+    border: 1px solid rgba(138, 0, 0, 0.6);
+    border-top: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+}
+
+.IIIvIIIrankTxtCont,
+.VIvVIrankTxtCont {
+    display: none;
+}
+
+.PNameBox {
+    width: 175px;
+    height: 25px;
+    margin-bottom: 0px;
+}
+
+.pName {
+    float: left;
+    padding-left: 15px;
+    cursor: default;
+}
+
+.rankNum {
+    float: right;
+    margin-right: 15px;
+    cursor: default;
+}
+
+.IvIrankTxtCont .PNameBox:nth-child(1) p,
+.IvIrankTxtCont .PNameBox:nth-child(2) p,
+.IvIrankTxtCont .PNameBox:nth-child(3) p,
+.IIIvIIIrankTxtCont .PNameBox:nth-child(1) p,
+.IIIvIIIrankTxtCont .PNameBox:nth-child(2) p,
+.IIIvIIIrankTxtCont .PNameBox:nth-child(3) p,
+.VIvVIrankTxtCont .PNameBox:nth-child(1) p,
+.VIvVIrankTxtCont .PNameBox:nth-child(2) p,
+.VIvVIrankTxtCont .PNameBox:nth-child(3) p  {
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 10px red, 0 0 15px red;
+}
+
+.infotxtCont .txtBox  {
+    width: 535px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+}
+
+.videos iframe {
+    margin-top: 25px;
+    width: 618px;
+    height: 348px;
+    border: 1px solid rgba(138, 0, 0, 0.6);
+}
+
+#moreInfoBtn4  .far {
+    line-height: 25px;
+}
+
+.rightBlock > p:nth-child(1) {
+    margin: -10px 40px 6px 10px;
+    font-size: 20px;
+    cursor: default;
+}
+.userPosts {
+    margin-left: 10px;
+    height: 620px;
+    overflow: hidden
+}
+.userPost {
+    padding: 5px 5px;
+    position: relative;
+    border: 1px solid rgb(180, 0, 0);
+    border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.userPost img {
+    border-radius: 50%;
+    border: 3px solid rgb(180, 0, 0)
+}
+
+.userPost h3 {
+    position: absolute;
+    left: 90px;
+    top: 0;
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 3px red, 0 0 5px red;
+    cursor: default;
+}
+
+.userPost p {
+    position: absolute;
+    left: 90px;
+    top: 30px;
+    font-size: 15px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    cursor: default;
+}
+.upDownVote :nth-child(1) {
+    margin-left: 10px;
+}
+.upDownVote i {
+    margin-left: 10px;
+}
+
+.upDownVote p,
+.upDownVote h4 {
+    float: left;
+    margin-left: 10px;
+    font-size: 13px;
+    text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black, -0.05em -0.05em black, -0.05em 0.05em black, 0.05em -0.05em black, 0.05em 0.05em black;
+    cursor: default;
+}
+
+.upDownVote h4,
+.upDownVote .fas {
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 3px red, 0 0 5px red;
+    cursor: pointer;
+}
+
+.upDownVote {
+    margin-bottom: 10px;
+    border: 1px solid rgb(180, 0, 0);
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.userPostSubmit {
+    position: absolute;
+    width: 280px;
+    height: 38px;
+    background-color: rgba(59, 0, 0, 0.603);
+    border: 1px solid rgb(180, 0, 0);
+}
+
+.userPostSubmit p {
+    margin-top: 3px;
+    margin-left: 110px;
+    font-size: 20px;
+}
+.userPostSubmit:hover {
+    cursor: pointer;
+    background-color: rgba(107, 1, 1, 0.747);
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px red, 0 0 10px red;
+
+}
